@@ -21,56 +21,69 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<!----Scroll progress bar begins--->
+<div class="progress-container fixed-top">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+<!----Scroll progress bar Ends--->
 
-<!--================ Header Menu Area start =================-->
-<header class="header_area">
-    <div class="main_menu">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container box_1620">
-                <a class="navbar-brand logo_h" href="#home"><img src="img/logos/mainlogo3.jpg" align="left" alt=""></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-                    <ul class="nav navbar-nav menu_nav justify-content-end">
-                        <li class="nav-item"><a class="nav-link" href="#home"><b>Home</b></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about"><b>About</b></a></li>
-                        <li class="nav-item submenu dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
-                               aria-haspopup="true"
-                               aria-expanded="false"><b>Program</b></a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item"><a class="nav-link" href="#speakers"><b>Speakers</b></a></li>
-                                <li class="nav-item"><a class="nav-link" href="#schedule"><b>Schedule</b></a></li>
-								<li class="nav-item"><a class="nav-link" href="#welcomeguide"><b>Welcome Guide</b></a></li>
-                                <li class="nav-item"><a class="nav-link" href="#team"><b>Team</b></a></li>
-                                 <li class="nav-item"><a class="nav-link" href="developer.html"><b>Developers</b></a></li>
-   
-                               <!-- <li class="nav-item"><a class="nav-link" href="#events"><b>Events</b></a></li>-->
-                            </ul>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="#sponsors"><b>Sponsors</b></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#venue"><b>Venue</b></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#tickets"><b>Registration</b></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact"><b>Contact</b></a></li>
-                        
-                       
-                    </ul>
 
-                    <!--<ul class="nav-right text-center text-lg-right py-4 py-lg-0">
-                        <li><a href="#register">Register Now</a></li>
-                    </ul>
-					-->
-                </div>
-            </div>
-        </nav>
+<!---IntroImageBanner begins------>
+<div class="full-height" id="home" style="background: linear-gradient(0deg, rgba(128,128,128,0.3), rgba(128,128,128,0.31)),url('img/banner/AgaKhanPalace.jpg') center center no-repeat;   background-size: cover;">
+	<div class="container text-center vertical-center">
+		<img src="img/logos/pune.png">
+        <h3 style="color: white">Pune Section Student/YP/WIE Congress 2020</h4>
+        <h4 style="color: white">Venue:</h4>
+        <h4 style="color: white">College of Engineering, Pune.</h4>
+        <h3 style="color: white"><p>19<sup>th</sup> - 20<sup>th</sup> March</p></h3>
     </div>
-</header>
+</div>
+<!---IntroImageBanner ends------>
 
+
+<!------Navbar Begins-------->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+  <a class="navbar-brand" href="#"><img src="img/logos/mainlogo3.jpg" align="left" alt="" style="width: 70px;"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Program
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#speakers">Speakers</a>
+          <a class="dropdown-item" href="#schedule">Schedule</a>
+          <a class="dropdown-item" href="#welcomeguide">Welcome Guide</a>
+          <a class="dropdown-item" href="#team">Team</a>
+          <a class="dropdown-item" href="developer.html">Developers</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#sponsors">Sponsors</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#venue">Venu</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#tickets">Registration</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!------Navbar Ends-------->
 
 
 <!--================Hero Banner Area Start =================-->
@@ -814,6 +827,19 @@
     });
 </script>
 
+
+<!--Scroll progress bar-->
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
 
 </body>
 </html>
