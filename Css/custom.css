@@ -5,6 +5,10 @@
   --dark-accent: #874AB7;
   --dark-shades: #193C79;
 }
+
+/*Fonts library*/
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=PT+Serif&family=Sanchez&display=swap');
+
 /*navbar*/
 .navbar{
 	background-color: var(--dark-accent);
