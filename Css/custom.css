@@ -43,7 +43,7 @@
 }
 
 .footer{
-  background-color: var(--dark-accent);
+  background-color: var(--dark-shades);
   padding: 3vw;
   color: var(--light-shades);
 }
@@ -60,3 +60,4 @@ p,body{
   font-family: "Sanchez" !important;
   font-size: 1.2rem;
 }
+
