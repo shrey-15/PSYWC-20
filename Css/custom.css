@@ -1,13 +1,27 @@
+:root {
+  --light-shades: #E9E6ED;
+  --light-accent: #EEAD6C;
+  --main-brand: #4C94D4;
+  --dark-accent: #874AB7;
+  --dark-shades: #193C79;
+}
+/*navbar*/
+.navbar{
+	background-color: var(--dark-accent);
+}
+.nav-link{
+	color: var(--light-shades) !important;
+}
 /*For progress bar*/
 .progress-container {
   width: 100%;
   height: 8px;
-  background: #ccc;
+  background: var(--dark-accent);
 }
 
 .progress-bar {
   height: 8px;
-  background: #4caf50;
+  background: var(--dark-shades);
   width: 0%;
 }
 
@@ -23,3 +37,4 @@
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+
