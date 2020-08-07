@@ -42,3 +42,21 @@
   transform: translateY(-50%);
 }
 
+.footer{
+  background-color: var(--dark-accent);
+  padding: 3vw;
+  color: var(--light-shades);
+}
+
+h1,h2,h3{
+  font-family: "AbrilFatface" !important;
+  font-weight: bold;
+}
+h4,h5,h6{
+  font-family: "PTSerif" !important;
+  font-weight: bold;
+}
+p,body{
+  font-family: "Sanchez" !important;
+  font-size: 1.2rem;
+}
