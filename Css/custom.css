@@ -1,20 +1,20 @@
 :root {
-  --light-shades: #E9E6ED;
-  --light-accent: #EEAD6C;
-  --main-brand: #4C94D4;
-  --dark-accent: #874AB7;
-  --dark-shades: #193C79;
+  --light-shades: #e9e6ed;
+  --light-accent: #eead6c;
+  --main-brand: #4c94d4;
+  --dark-accent: #874ab7;
+  --dark-shades: #193c79;
 }
 
 /*Fonts library*/
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=PT+Serif&family=Sanchez&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=PT+Serif&family=Sanchez&display=swap");
 
 /*navbar*/
-.navbar{
-	background-color: var(--dark-accent);
+.navbar {
+  background-color: var(--dark-accent);
 }
-.nav-link{
-	color: var(--light-shades) !important;
+.nav-link {
+  color: var(--light-shades) !important;
 }
 /*For progress bar*/
 .progress-container {
@@ -42,27 +42,62 @@
   transform: translateY(-50%);
 }
 /*For icons*/
-.icon{
+.icon {
   width: 30px;
   fill: var(--light-shades);
 }
 
-.footer{
+.footer {
   background-color: var(--dark-shades);
   padding: 3vw;
   color: var(--light-shades);
 }
 
-h1,h2,h3{
+h1,
+h2,
+h3 {
   font-family: "AbrilFatface" !important;
   font-weight: bold;
 }
-h4,h5,h6{
+h4,
+h5,
+h6 {
   font-family: "PTSerif" !important;
   font-weight: bold;
 }
-p,body{
+p,
+body {
   font-family: "Sanchez" !important;
   font-size: 1.2rem;
 }
 
+/* Meet the Team Section */
+.main-carousel {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.carousel-cell {
+  background-color: #123570;
+  height: 90vh;
+  margin: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.carousel-cell p,
+.carousel-cell h4 {
+  margin: 20px;
+  color: rgb(238, 238, 238);
+  max-width: 350px;
+}
+
+.member-img {
+  width: 400px;
+  object-fit: cover;
+  height: 50vh;
+}
+/* Meet the Team Section End ~*/

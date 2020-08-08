@@ -2,151 +2,222 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>PSYWC20 - Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PSYWC20 - Home</title>
 </head>
 <!--------Css Frameworks------>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    
-    <link rel="stylesheet" type="text/css" href="Css/custom.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
+<link rel="stylesheet" type="text/css" href="Css/custom.css">
+
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 <!-------Js Framworks--------->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+  integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
-    <script type="text/javascript" src="Js/scroll_indicator.js"></script>
+<script type="text/javascript" src="Js/scroll_indicator.js"></script>
 
 <!------Body Starts--->
+
 <body>
 
-    <!---Scroll indicator starts----->
-    <div class="progress-container fixed-top">
-        <div class="progress-bar" id="myBar"></div>
-    </div>
-    <!---Scroll indicator ends----->
+  <!---Scroll indicator starts----->
+  <div class="progress-container fixed-top">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+  <!---Scroll indicator ends----->
 
-<!---IntroImageBanner begins------>
-    <div class="full-height" id="home" style="background: linear-gradient(0deg, rgba(128,128,128,0.3), rgba(128,128,128,0.31)),url('img/banner/AgaKhanPalace.jpg') center center no-repeat;   background-size: cover;">
-        <div class="container text-center vertical-center">
-            <img src="img/logos/pune.png">
-            <h3 style="color: white">Pune Section Student/YP/WIE Congress 2020</h4>
-            <h4 style="color: white">Venue:</h4>
-            <h4 style="color: white">College of Engineering, Pune.</h4>
-            <h3 style="color: white"><p>19<sup>th</sup> - 20<sup>th</sup> March</p></h3>
+  <!---IntroImageBanner begins------>
+  <div class="full-height" id="home"
+    style="background: linear-gradient(0deg, rgba(128,128,128,0.3), rgba(128,128,128,0.31)),url('img/banner/AgaKhanPalace.jpg') center center no-repeat;   background-size: cover;">
+    <div class="container text-center vertical-center">
+      <img src="img/logos/pune.png">
+      <h3 style="color: white">Pune Section Student/YP/WIE Congress 2020</h4>
+        <h4 style="color: white">Venue:</h4>
+        <h4 style="color: white">College of Engineering, Pune.</h4>
+        <h3 style="color: white">
+          <p>19<sup>th</sup> - 20<sup>th</sup> March</p>
+        </h3>
+    </div>
+  </div>
+  <!---IntroImageBanner ends------>
+
+
+  <!------Navbar Begins-------->
+  <nav class="navbar navbar-expand-md navbar-light sticky-top">
+    <a class="navbar-brand" href="#"><img src="img/logos/mainlogo3.jpg" align="left" alt="" style="width: 70px;"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Program
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#speakers">Speakers</a>
+            <a class="dropdown-item" href="#schedule">Schedule</a>
+            <a class="dropdown-item" href="#welcomeguide">Welcome Guide</a>
+            <a class="dropdown-item" href="#team">Team</a>
+            <a class="dropdown-item" href="developer.html">Developers</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#sponsors">Sponsors</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#venue">Venu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#tickets">Registration</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!------Navbar Ends-------->
+
+
+
+  <!---IntroImageBanner begins------>
+  <div class="full-height" id="home"
+    style="background: linear-gradient(0deg, rgba(128,128,128,0.3), rgba(128,128,128,0.31)),url('img/banner/AgaKhanPalace.jpg') center center no-repeat;   background-size: cover;">
+    <div class="container text-center vertical-center">
+      <img src="img/logos/pune.png">
+      <h3 style="color: white">Pune Section Student/YP/WIE Congress 2020</h4>
+        <h4 style="color: white">Venue:</h4>
+        <h4 style="color: white">College of Engineering, Pune.</h4>
+        <h3 style="color: white">
+          <p>19<sup>th</sup> - 20<sup>th</sup> March</p>
+        </h3>
+    </div>
+  </div>
+  <!---IntroImageBanner ends------>
+
+  <!---Meet-The-Team Begins-->
+
+  <div class="full-height" style="background-color: #193C79;">
+    <div class="main-carousel" data-flickity='{ "freeScroll": true }'>
+      <div class="carousel-cell">
+        <div>
+          <img src="./img/team/member-1.jpg" class="member-img">
+          <h4>Mem BerI</h4>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s.</p>
         </div>
-    </div>
-<!---IntroImageBanner ends------>
-
-
-    <!------Navbar Begins-------->
-    <nav class="navbar navbar-expand-md navbar-light sticky-top">
-      <a class="navbar-brand" href="#"><img src="img/logos/mainlogo3.jpg" align="left" alt="" style="width: 70px;"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Program
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#speakers">Speakers</a>
-              <a class="dropdown-item" href="#schedule">Schedule</a>
-              <a class="dropdown-item" href="#welcomeguide">Welcome Guide</a>
-              <a class="dropdown-item" href="#team">Team</a>
-              <a class="dropdown-item" href="developer.html">Developers</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#sponsors">Sponsors</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#venue">Venu</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#tickets">Registration</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
       </div>
-    </nav>
-<!------Navbar Ends-------->
-
-
-
-<!---IntroImageBanner begins------>
-    <div class="full-height" id="home" style="background: linear-gradient(0deg, rgba(128,128,128,0.3), rgba(128,128,128,0.31)),url('img/banner/AgaKhanPalace.jpg') center center no-repeat;   background-size: cover;">
-        <div class="container text-center vertical-center">
-            <img src="img/logos/pune.png">
-            <h3 style="color: white">Pune Section Student/YP/WIE Congress 2020</h4>
-            <h4 style="color: white">Venue:</h4>
-            <h4 style="color: white">College of Engineering, Pune.</h4>
-            <h3 style="color: white"><p>19<sup>th</sup> - 20<sup>th</sup> March</p></h3>
+      <div class="carousel-cell">
+        <div>
+          <img src="./img/team/member-2.jpg" class="member-img">
+          <h4>Mem BerII</h4>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s.</p>
         </div>
-    </div>
-<!---IntroImageBanner ends------>
+      </div>
 
-<!------Footer Begins----->
-<div class="footer">
-  <div class="row">
-    <div class="col" style="padding-right:6vw; padding-left: 6vw;">
-       <div class="row">
-         <h1>About PSYWC</h1>
-       </div>
-       <div class="row">
-         <p >The Congress provides two days of connection, inspiration, motivation, effective networking, personal development and skill building for hundreds of students/young professionals. Expert speakers lead workshops, seminars on recent technologies, including businesses and entrepreneurship, work life balance and more. The Congress offers incredible opportunities for businesses networking , professional development and personal growth.</p>
-       </div>
-    </div>
-    <div class="col" style="max-width: 400px; min-width: 360px; padding-right:6vw; padding-left: 6vw;">
-       <div class="row">
-         <h1>About PSYWC</h1>
-       </div>
-       <div class="row">
-         <div class="col">
-           <div class="row"><a class="nav-link" href="#">Home</a></div>
-           <div class="row"><a class="nav-link" href="#about">About</a></div>
-           <div class="row"><a class="nav-link" href="#speakers">Speakers</a></div>
-         </div>
-         <div class="col">
-           <div class="row"><a class="nav-link" href="#schedule">Schedule</a></div>
-           <div class="row"><a class="nav-link" href="#contact">Contact</a></div>
-           <div class="row"><a class="nav-link" href="developer.html">Developers</a></div>
-         </div>
-         <div></div>
-       </div>
-    </div>    
-  </div>
-  <div class="row">
-    <hr style="background-color: grey; height: 0.6px; width: 85vw;">
-  </div>
-  <div class="row">
-    <div class="col" style="padding-right:6vw; padding-left: 6vw;">Copyright © 2020 PSYWC. All rights reserved </div>
-    <div class="col" style="max-width: 400px; min-width: 360px; padding-right:6vw; padding-left: 6vw; text-align: right;">
-      <a href="" style="padding-right: 10px;"><img class="icon" src="Bootstrap/icons/facebook.svg"></a>
-      <a href="" style="padding-right: 10px;"><img class="icon" src="Bootstrap/icons/twitter.svg"></a>
-      <a href="" style="padding-right: 10px;"><img class="icon" src="Bootstrap/icons/instagram.svg"></a>
-      <a href="" ><img class="icon" src="Bootstrap/icons/linkedin.svg"></a>
-
+      <div class="carousel-cell">
+        <div>
+          <img src="./img/team/member-3.jpg" class="member-img">
+          <h4>Mem BerIII</h4>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s.</p>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <div>
+          <img src="./img/team/member-4.jpg" class="member-img">
+          <h4>Mem BerIV</h4>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s.</p>
+        </div>
+      </div>
     </div>
   </div>
-</div>
-<!------Footer Ends----->
 
 
+  <!---Meet-The-Team Ends-->
+
+  <!------Footer Begins----->
+  <div class="footer">
+    <div class="row">
+      <div class="col" style="padding-right:6vw; padding-left: 6vw;">
+        <div class="row">
+          <h1>About PSYWC</h1>
+        </div>
+        <div class="row">
+          <p>The Congress provides two days of connection, inspiration, motivation, effective networking, personal
+            development and skill building for hundreds of students/young professionals. Expert speakers lead workshops,
+            seminars on recent technologies, including businesses and entrepreneurship, work life balance and more. The
+            Congress offers incredible opportunities for businesses networking , professional development and personal
+            growth.</p>
+        </div>
+      </div>
+      <div class="col" style="max-width: 400px; min-width: 360px; padding-right:6vw; padding-left: 6vw;">
+        <div class="row">
+          <h1>About PSYWC</h1>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="row"><a class="nav-link" href="#">Home</a></div>
+            <div class="row"><a class="nav-link" href="#about">About</a></div>
+            <div class="row"><a class="nav-link" href="#speakers">Speakers</a></div>
+          </div>
+          <div class="col">
+            <div class="row"><a class="nav-link" href="#schedule">Schedule</a></div>
+            <div class="row"><a class="nav-link" href="#contact">Contact</a></div>
+            <div class="row"><a class="nav-link" href="developer.html">Developers</a></div>
+          </div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <hr style="background-color: grey; height: 0.6px; width: 85vw;">
+    </div>
+    <div class="row">
+      <div class="col" style="padding-right:6vw; padding-left: 6vw;">Copyright © 2020 PSYWC. All rights reserved </div>
+      <div class="col"
+        style="max-width: 400px; min-width: 360px; padding-right:6vw; padding-left: 6vw; text-align: right;">
+        <a href="" style="padding-right: 10px;"><img class="icon" src="Bootstrap/icons/facebook.svg"></a>
+        <a href="" style="padding-right: 10px;"><img class="icon" src="Bootstrap/icons/twitter.svg"></a>
+        <a href="" style="padding-right: 10px;"><img class="icon" src="Bootstrap/icons/instagram.svg"></a>
+        <a href=""><img class="icon" src="Bootstrap/icons/linkedin.svg"></a>
+
+      </div>
+    </div>
+  </div>
+  <!------Footer Ends----->
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+  <script>
+    $('.main-carousel').flickity({
+      // options
+      cellAlign: 'left',
+      contain: true
+    });
+  </script>
 
 </body>
 <!------Body Ends--->
-
