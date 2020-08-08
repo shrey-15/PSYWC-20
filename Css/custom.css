@@ -10,21 +10,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=PT+Serif&family=Sanchez&display=swap");
 
 /*navbar*/
-.navbar {
-  background-color: var(--dark-accent);
+
+
+
+
+.navbar{
+	background-color: var(--main-brand);
 }
-.nav-link {
-  color: var(--light-shades) !important;
+.nav-link{
+	color: var(--light-shades) !important;
 }
 /*For progress bar*/
 .progress-container {
   width: 100%;
-  height: 8px;
-  background: var(--dark-accent);
+  height: 2px;
+  background: var(--main-brand);
 }
 
 .progress-bar {
-  height: 8px;
+  height: 2px;
   background: var(--dark-shades);
   width: 0%;
 }
@@ -42,31 +46,26 @@
   transform: translateY(-50%);
 }
 /*For icons*/
-.icon {
+.icon{
   width: 30px;
   fill: var(--light-shades);
 }
 
-.footer {
+.footer{
   background-color: var(--dark-shades);
   padding: 3vw;
   color: var(--light-shades);
 }
 
-h1,
-h2,
-h3 {
+h1,h2,h3{
   font-family: "AbrilFatface" !important;
   font-weight: bold;
 }
-h4,
-h5,
-h6 {
+h4,h5{
   font-family: "PTSerif" !important;
   font-weight: bold;
 }
-p,
-body {
+h6,p,body{
   font-family: "Sanchez" !important;
   font-size: 1.2rem;
 }
@@ -101,3 +100,57 @@ body {
   height: 50vh;
 }
 /* Meet the Team Section End ~*/
+
+/*About us starts*/
+.brdr {
+  border: 2px solid black;
+}
+
+.aboutus{
+  /* height:100vh; */
+}
+.history{
+  background-color: var(--dark-shades);
+  color: var(--light-shades);
+}
+#heading{
+  font-size:300%;
+  color: var(--dark-shades);
+  padding: 2vw;
+}
+#logo{
+  display: flex;justify-content: center;
+  width: 30%;
+  height: 20vh;
+  margin: 0 auto ;
+}
+#sub-head{
+  color: var(--main-brand);
+  font-size: 180%;
+  text-align: center;
+  margin: 5vw auto;
+}
+#content{
+  
+  text-align: center;
+  font-size: 90%;
+  padding: 3vw 10vw;
+  line-height: 1.7;
+}
+#yp{
+  width: 90%;
+  height: 10vh;
+  margin-left: 12vw;
+}
+#wie{
+  width:25vh;
+  height: 25vh;
+  margin-right: 20vw;
+}
+#ieee{
+  display: flex;justify-content: center;
+  width: 20%;
+  height: 15vh;
+  margin: 0 auto ;
+}
+/* About us ends */
