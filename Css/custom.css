@@ -41,6 +41,11 @@
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+/*For icons*/
+.icon{
+  width: 30px;
+  fill: var(--light-shades);
+}
 
 .footer{
   background-color: var(--dark-shades);
