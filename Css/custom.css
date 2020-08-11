@@ -36,6 +36,7 @@
 /*Full height*/
 .full-height {
   min-height: 100vh;
+  scroll-behavior: smooth;
 }
 /*Vertical Align To center*/
 .vertical-center {
