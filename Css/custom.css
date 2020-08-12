@@ -32,7 +32,11 @@
   background: var(--dark-shades);
   width: 0%;
 }
-
+/*Section*/
+.section{
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
 /*Full height*/
 .full-height {
   min-height: 100vh;
@@ -40,7 +44,6 @@
 }
 .full-height-section{
   min-height: 100vh;
-  scroll-behavior: smooth;
   padding-top: 25px;
 }
 /*Vertical Align To center*/
@@ -74,6 +77,8 @@ h4,h5{
 h6,p,body{
   font-family: "Sanchez" !important;
   font-size: 1.2rem;
+  scroll-behavior: smooth;
+
 }
 
 /* Meet the Team Section */
