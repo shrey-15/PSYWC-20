@@ -11,14 +11,15 @@
 
 /*navbar*/
 
-
-
-
-.navbar{
-	background-color: var(--main-brand);
+body {
+  overflow-x: hidden;
 }
-.nav-link{
-	color: var(--light-shades) !important;
+
+.navbar {
+  background-color: var(--main-brand);
+}
+.nav-link {
+  color: var(--light-shades) !important;
 }
 /*For progress bar*/
 .progress-container {
@@ -33,7 +34,7 @@
   width: 0%;
 }
 /*Section*/
-.section{
+.section {
   padding-left: 10vw;
   padding-right: 10vw;
 }
@@ -42,7 +43,7 @@
   min-height: 100vh;
   scroll-behavior: smooth;
 }
-.full-height-section{
+.full-height-section {
   min-height: 100vh;
   padding-top: 25px;
 }
@@ -55,58 +56,89 @@
   transform: translateY(-50%);
 }
 /*For icons*/
-.icon{
+.icon {
   width: 30px;
   fill: var(--light-shades);
 }
 
-.footer{
+.footer {
   background-color: var(--dark-shades);
   padding: 3vw;
   color: var(--light-shades);
 }
 
-h1,h2,h3{
+h1,
+h2,
+h3 {
   font-family: "AbrilFatface" !important;
   font-weight: bold;
 }
-h4,h5{
+h4,
+h5 {
   font-family: "PTSerif" !important;
   font-weight: bold;
 }
-h6,p,body{
+h6,
+p,
+body {
   font-family: "Sanchez" !important;
   font-size: 1.2rem;
   scroll-behavior: smooth;
-
 }
 
 /* Meet the Team Section */
-.main-carousel {
+.meet-the-team {
+  width: 90vw;
+  text-align: center;
+  margin: 0 auto;
   box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
-
-.carousel-cell {
-  background-color: #123570;
-  height: 90vh;
-  margin: 10px;
-  margin-right: 10px;
+.member {
+  margin: 10px !important;
   border-radius: 5px;
-}
-
-.carousel-cell p,
-.carousel-cell h4 {
-  margin: 20px;
-  color: rgb(238, 238, 238);
-  max-width: 350px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .member-img {
-  width: 400px;
+  width: 100%;
   object-fit: cover;
-  height: 50vh;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 40vh;
 }
+
+.member-details {
+  padding: 5px;
+  text-align: left;
+}
+
+@media only screen and (max-width: 1000px) {
+  .meet-the-team {
+    width: 90vw;
+    text-align: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .meet-the-team {
+    width: 80vw;
+    text-align: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Meet the Team Section End ~*/
 
 /*About us starts*/
@@ -114,51 +146,52 @@ h6,p,body{
   border: 2px solid black;
 }
 
-.aboutus{
+.aboutus {
   /* height:100vh; */
 }
-.history{
+.history {
   background-color: var(--dark-shades);
   color: var(--light-shades);
 }
-#heading{
-  font-size:300%;
+#heading {
+  font-size: 300%;
   color: var(--dark-shades);
   padding: 2vw;
 }
-#logo{
-  display: flex;justify-content: center;
+#logo {
+  display: flex;
+  justify-content: center;
   width: 30%;
   height: 20vh;
-  margin: 0 auto ;
+  margin: 0 auto;
 }
-#sub-head{
+#sub-head {
   color: var(--main-brand);
   font-size: 180%;
   text-align: center;
   margin: 5vw auto;
 }
-#content{
-  
+#content {
   text-align: center;
   font-size: 90%;
   padding: 3vw 10vw;
   line-height: 1.7;
 }
-#yp{
+#yp {
   width: 90%;
   height: 10vh;
   margin-left: 12vw;
 }
-#wie{
-  width:25vh;
+#wie {
+  width: 25vh;
   height: 25vh;
   margin-right: 20vw;
 }
-#ieee{
-  display: flex;justify-content: center;
+#ieee {
+  display: flex;
+  justify-content: center;
   width: 20%;
   height: 15vh;
-  margin: 0 auto ;
+  margin: 0 auto;
 }
 /* About us ends */
