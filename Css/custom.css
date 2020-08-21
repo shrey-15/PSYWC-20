@@ -5,6 +5,11 @@
   --dark-accent: #874ab7;
   --dark-shades: #193c79;
 }
+*
+{
+  margin: 0;
+  padding: 0;
+}
 
 /*Fonts library*/
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=PT+Serif&family=Sanchez&display=swap");
@@ -557,6 +562,8 @@ body {
   font-family: "Sanchez" !important;
   font-size: 1.2rem;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+
 }
 
 /* Meet the Team Section */
@@ -671,52 +678,11 @@ body {
 
 
 /*Speaker card begins*/
-.speaker-background{
-  background-color: #3a9dee;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='65' height='65' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%233185ca' fill-opacity='0.12'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.12'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
-  animation:fade-in 2s cubic-bezier(.39,.575,.565,1.000) both;
-}
-.speaker-card{
-  padding:5px;
-}
-.speaker-image{
-  width: 110px;
-  padding: 0px;
-  margin: 0px;
-  position: absolute;
-  
-}
-.speaker-description{ 
-}
-.speaker-description > .speaker-description-heading{
-  font-weight: bold;
-}
-.speaker-animate:hover{
-<<<<<<< HEAD
-  border-color: rgb(15,15,15,0.7);
-  background-color: rgb(15,15,15,0.1);
-  animation:scale-up 0.6s cubic-bezier(.39,.575,.565,1.000) both;
-=======
-  
-  animation:scale-up 0.6s both;
-  background-color: rgb(0,0,0,0.1);
->>>>>>> 8cd691771dc9cb914c68f39738f7b0c82410cd1a
-}
-.speaker-description > .speaker-description-designation{
-  font-style: italic;
-}
-.speaker-description > .speaker-description-info{
-  font-style: italic;
-}
+.body{
+  overflow-x: hidden;
 
-@-webkit-keyframes scale-up{
-  0%{
-    opacity:1;
-    }
-  100%{
-    opacity: 1;
-    transform:scale(1.1);
-    }
-  }
+}
+s
+
 
 /*Speaker card ends*/
