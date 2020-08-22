@@ -45,14 +45,14 @@ section{
 
 }
 .card{
-  width :30rem;
+  width :27rem;
   background-color: #ebeef8;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 3rem 0;
-  margin-right: 1rem;
+  margin: 2rem 0;
+  margin-right: 1.5rem;
   box-shadow: .5rem .5rem 3rem rgba(0,0,0,0.2);
 }
 .card .card-img{
@@ -76,7 +76,7 @@ section{
 .card h1{
   font-size: 2.5rem;
   color: #333;
-  margin: 1.5rem 0;
+  margin: 1rem 0;
 
 }
 .job-title{
@@ -88,7 +88,7 @@ section{
 
 .about{
   font-size: 1.5rem;
-  margin: 1.5rem 0;
+  margin: 1rem 0;
   font-style: italic;
   text-align: center;
   color: #333;
@@ -99,12 +99,12 @@ section{
   list-style: none;
   display: flex;
   justify-content: space-evenly;
-  padding: 2rem 0;
-  margin-top: 1.5rem;
+  padding: .5rem 0;
+  margin-top: .5rem;
   border-top: 1px solid rgba(0,0,0,.1);
 }
 .social-media i{
-  font-size: 3rem;
+  font-size: 2rem;
   transition: color .5s;
 
 }
@@ -130,7 +130,7 @@ section{
     align-items: center;
   }
   .card{
-    margin: 2rem;
+    margin: 1rem;
     transition: transform .5s;
   }
   @keyframes fadeIn{
