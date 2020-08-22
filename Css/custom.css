@@ -566,6 +566,60 @@ body {
 
 }
 
+/* Meet the Team Section */
+.meet-the-team {
+  width: 90vw;
+  text-align: center;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.member {
+  margin: 10px !important;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.member-img {
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 40vh;
+}
+
+.member-details {
+  padding: 5px;
+  text-align: left;
+}
+
+@media only screen and (max-width: 1000px) {
+  .meet-the-team {
+    width: 90vw;
+    text-align: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .meet-the-team {
+    width: 80vw;
+    text-align: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Meet the Team Section End ~*/
 
 /*About us starts*/
 .brdr {
