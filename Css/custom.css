@@ -1,9 +1,9 @@
 :root {
-  --light-shades: #e9e6ed;
-  --light-accent: #eead6c;
-  --main-brand: #4c94d4;
-  --dark-accent: #874ab7;
-  --dark-shades: #193c79;
+  --light-shades: #fefefe;
+  --light-accent: #93816a;
+  --main-brand: #989e98;
+  --dark-accent: #945b4f;
+  --dark-shades: #1f1933;
 }
 *
 {
@@ -12,20 +12,26 @@
 }
 
 /*Fonts library*/
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=PT+Serif&family=Sanchez&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=PT+Serif&family=Sanchez&display=swap");
 
 
 
-@import url('https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&subset=latin-ext,vietnamese');
+@import url('https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&subset=latin-ext,vietnamese'); */
 
+*{font-family: 'Fira Sans', sans-serif;}
+.bold{font-weight:bold;}
+.italic{font-style: italic;}
+.oblique{font-style: oblique;}
 
-
+body{
+  background-color: var(--dark-shades)!important;
+}
 /*  Banner  */
 .banner {
 	width: 100%;
 	display: block;
 	overflow-x: hidden;
-	background-color: #003366;
+	background-color: var(--dark-shades);
   color: #c4c3ca;
 	font-family: 'Muli', sans-serif;
 }
@@ -122,7 +128,7 @@ a:hover{
 	display: block;
 }
 .full-height {
-	height: 100vh;
+  height: 100vh;
 }
 .section.z-bigger {
 	z-index: 100;
@@ -143,12 +149,12 @@ a:hover{
 	font-size: 22px;
 	font-weight: 700;
 	padding: 0;
-  color: #6f598f;
+  color: var(--main-brand);
 }
 .section-title-wrap h1{
 	margin: 0;
 	padding: 0;
-	font-size: 3vw;
+	font-size: 5vw;
   letter-spacing: 3px;
 	font-weight: 900;
   color: #fff;
@@ -494,21 +500,23 @@ body {
 }
 
 .navbar {
-  background-color: var(--main-brand);
+  background-color: var(--light-shades);
 }
 .nav-link {
-  color: var(--light-shades) !important;
+  color: var(--dark-accent) !important;
+  padding: 1vw;
+  font-size: 18px;
 }
 /*For progress bar*/
 .progress-container {
   width: 100%;
   height: 5px;
-  background: var(--main-brand);
+  background: var(--light-accent)!important;
 }
 
 .progress-bar {
   height: 5px;
-  background: var(--dark-shades);
+  background: var(--dark-accent)!important;
   width: 0%;
 }
 /*Section*/
@@ -548,22 +556,22 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "AbrilFatface" !important;
+  font-family: inherit;
   font-weight: bold;
 }
 h4,
 h5 {
-  font-family: "PTSerif" !important;
+  font-family: inherit;
   font-weight: bold;
 }
 h6,
 p,
 body {
-  font-family: "Sanchez" !important;
+  font-family: inherit;
   font-size: 1.2rem;
   scroll-behavior: smooth;
   overflow-x: hidden;
-
+  color:var(--main-brand)
 }
 
 /* Meet the Team Section */
@@ -630,12 +638,12 @@ body {
   /* height:100vh; */
 }
 .history {
-  background-color: var(--dark-shades);
-  color: var(--light-shades);
+  background-color: var(--light-accent);
+  color: var(--dark-shades);
 }
 #heading {
-  font-size: 300%;
-  color: var(--dark-shades);
+  font-size: 500%;
+  color: var(--main-brand);
   padding: 2vw;
 }
 #logo {
@@ -647,13 +655,13 @@ body {
 }
 #sub-head {
   color: var(--main-brand);
-  font-size: 180%;
+  font-size: 200%;
   text-align: center;
   margin: 5vw auto;
 }
 #content {
   text-align: center;
-  font-size: 90%;
+  font-size: 100%;
   padding: 3vw 10vw;
   line-height: 1.7;
 }
@@ -692,7 +700,7 @@ a{
 }
 section{
   padding:10rem 0;
-  background-color: #fff;
+  background-color: var(--light-shades);
 }
 .heading{
   text-transform: uppercase;
@@ -701,7 +709,7 @@ section{
   margin-right: -3px;
   margin-bottom: 5rem;
   text-align: center;
-  color: #333;
+  color: var(--main-brand);
   position: relative;
 
 }
@@ -710,7 +718,7 @@ section{
   content:"";
   width: 10rem;
   height: .8rem;
-  background-color: #45e19f;
+  background-color: var(--dark-accent);
   position: absolute;
   bottom: -2rem;
   left: 50%;
@@ -740,7 +748,7 @@ section{
   width:100%;
   height: 15rem;
   object-fit: cover;
-  -webkit-clip-path: polygon(0 0, 100% 0 , 100% 73%, 0% 100%)
+  -webkit-clip-path: polygon(0 0, 100% 0 , 100% 73%, 0% 100%);
   -clip-path: polygon(0 0, 100% 0, 100% 73%, 0% 100%);
 }
 .profile-img{
@@ -773,7 +781,7 @@ section{
   margin: .5rem 0;
   font-style: normal;
   text-align: center;
-  color: #333;
+  color: var(--light-shades);
 
 }
 .social-media{
@@ -801,7 +809,7 @@ section{
 }
 .fa-facebook-square:hover,
 .fa-twitter-square:hover,
-.fa-linkdein-square:hover,{
+.fa-linkdein-square:hover{
   color:#45e19f;
 }
 @media screen and (min-width:700px){
