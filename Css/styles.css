@@ -83,13 +83,13 @@ section{
   color:#777;
   font-size: 1.5rem;
   font-weight: 300;
-
+    text-align: center;
 }
 
 .about{
   font-size: 1.5rem;
   margin: 1rem 0;
-  font-style: italic;
+  font-style:normal;
   text-align: center;
   color: #333;
 
