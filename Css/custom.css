@@ -16,19 +16,12 @@
 
 
 
-<<<<<<< HEAD
-@import url('https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&subset=latin-ext,vietnamese');
-a{
-  text-decoration: none;
-}
-=======
 @import url('https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&subset=latin-ext,vietnamese'); */
 
 *{font-family: 'Fira Sans', sans-serif;}
 .bold{font-weight:bold;}
 .italic{font-style: italic;}
 .oblique{font-style: oblique;}
->>>>>>> 81a88fff568868fdbb1d3d217ed974a4b4274b1f
 
 body{
   background-color: var(--dark-shades)!important;
@@ -719,7 +712,7 @@ body{
 }
 
 
-a{
+.card-wrapper a:link{
   text-decoration: none;
 
 }
@@ -735,7 +728,7 @@ section{
 .anc{
   text-decoration: none;
   text-decoration-color: white;
-  text-decoration-style: solid;
+
 }
 .heading{
   text-transform: uppercase;
@@ -819,7 +812,7 @@ section{
   margin: .5rem 0;
   font-style: normal;
   text-align: center;
-  color: var(--light-shades);
+  color: #333;
 
 }
 .social-media{
