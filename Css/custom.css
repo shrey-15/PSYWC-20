@@ -17,7 +17,9 @@
 
 
 @import url('https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&subset=latin-ext,vietnamese');
-
+a{
+  text-decoration: none;
+}
 
 
 /*  Banner  */
@@ -684,15 +686,24 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  overflow-x: hidden;
+}
+
 
 a{
   text-decoration: none;
-  color: #fff;
 
 }
 section{
   padding:10rem 0;
+  margin-top: 1rem;
   background-color: #fff;
+}
+.anc{
+  text-decoration: none;
+  text-decoration-color: white;
+  text-decoration-style: solid;
 }
 .heading{
   text-transform: uppercase;
@@ -700,6 +711,7 @@ section{
   letter-spacing: 3px;
   margin-right: -3px;
   margin-bottom: 5rem;
+  margin-top: 5rem;
   text-align: center;
   color: #333;
   position: relative;
@@ -722,6 +734,7 @@ section{
   align-items: center;
   align-content: center;
   flex-direction: column;
+  overflow-x: hidden;
 
 }
 .card{
@@ -732,9 +745,9 @@ section{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 2rem 0;
+  margin: 1rem 0;
 
-  box-shadow: .5rem .5rem 3rem rgba(0,0,0,0.2);
+  box-shadow: .5rem .5rem 2rem rgba(0,0,0,0.2);
 }
 .card .card-img{
   width:100%;
@@ -744,8 +757,8 @@ section{
   -clip-path: polygon(0 0, 100% 0, 100% 73%, 0% 100%);
 }
 .profile-img{
-  width: 15rem;
-  height: 15rem;
+  width: 13rem;
+  height: 13rem;
   object-fit: cover;
   border-radius: 50%;
   margin-top: -11rem;
@@ -755,18 +768,19 @@ section{
 }
 
 .card h1{
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #333;
-  margin: 1rem 0;
+  margin: .5rem 0;
 
 }
 .job-title{
   color:#777;
   font-size: 1.5rem;
-  font-weight: 300;
+  font-weight: 500;
   text-align: center;
 
 }
+
 
 .about{
   font-size: 1.5rem;
@@ -780,7 +794,7 @@ section{
   width: 100%;
   list-style: none;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   padding: .2rem 0;
   margin-top: .5rem;
   border-top: 1px solid rgba(0,0,0,.1);
@@ -843,7 +857,9 @@ section{
   }
 
 .card:hover{
-  transform: scale(1.05);
+  text-decoration: none;
+  transform: scale(1.1);
+
 }
 }
 
