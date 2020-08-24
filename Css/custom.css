@@ -716,7 +716,7 @@ body{
 }
 
 
-a{
+.card-wrapper a:link{
   text-decoration: none;
 
 }
@@ -727,7 +727,7 @@ section{
 .anc{
   text-decoration: none;
   text-decoration-color: white;
-  text-decoration-style: solid;
+
 }
 .heading{
   text-transform: uppercase;
@@ -811,7 +811,7 @@ section{
   margin: .5rem 0;
   font-style: normal;
   text-align: center;
-  color: var(--light-shades);
+  color: #333;
 
 }
 .social-media{
