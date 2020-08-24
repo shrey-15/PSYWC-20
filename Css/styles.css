@@ -59,7 +59,7 @@ section{
   width:100%;
   height: 20rem;
   object-fit: cover;
-  -webkit-clip-path: polygon(0 0, 100% 0 , 100% 73%, 0% 100%)
+  -webkit-clip-path: polygon(0 0, 100% 0 , 100% 73%, 0% 100%);
   clip-path: polygon(0 0, 100% 0, 100% 73%, 0% 100%);
 }
 .profile-img{
@@ -119,7 +119,7 @@ section{
 }
 .fa-facebook-square:hover,
 .fa-twitter-square:hover,
-.fa-linkdein-square:hover,{
+.fa-linkdein-square:hover{
   color:#45e19f;
 }
 @media screen and (min-width:700px){
