@@ -989,4 +989,8 @@ section{
   .mapouter{
     width: 80%;
   }
+  .job-title {
+
+	font-size: 1rem;
+}
 }
