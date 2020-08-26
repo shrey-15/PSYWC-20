@@ -979,6 +979,12 @@ section{
   #sub-head{
     font-size: 200%;
   }
+
+  .banneerr {
+	width: 100vw;
+
+}
+
   #logo{
     width: 50%;
     height: 15vh !important;
