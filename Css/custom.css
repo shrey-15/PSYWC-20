@@ -12,6 +12,9 @@
   padding: 0;
 }
 
+html {
+	scroll-behavior: smooth;
+}
 /*Fonts library*/
 /* @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=PT+Serif&family=Sanchez&display=swap");
 
@@ -411,15 +414,16 @@ a:hover{
 	right: 30px;
 	opacity: 0;
 	visibility: hidden;
-	width: 10px;
-	height: 40px;
+	width: 60px;
+	height: 60px;
 	font-size: 50px;
 	z-index: 251;
 	background-repeat: no-repeat;
 	background-position: top center;
-	background-size: 10px 40px;
+	background-size: auto;
+	background-size: 60px 60px;
 	cursor: pointer;
-//	background-image: url('http://www.ivang-design.com/svg-load/parallax/arrow-up.png');
+	background-image: url("../img/logos/icons8-arrow-left-64.png");
 	transform: translateY(-15px);
 	-webkit-transition: all 250ms linear;
 	transition: all 250ms linear;
@@ -527,6 +531,11 @@ body {
 
 .navbar {
   background-color: var(--dark-shades);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%
+  z-index: 99999999999999999999;
 }
 .nav-link {
   color: var(--light-shades) !important;
@@ -535,6 +544,19 @@ body {
 }
 .nav-link:hover{
   color: var(--light-accent) !important;
+}
+
+.navbar-fixed {
+    top: 0;
+    z-index: 100;
+  position: fixed;
+    width: 100%;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%
 }
 .navbar-brand{
   padding:0 auto ;
@@ -723,7 +745,6 @@ body {
   margin: 0 auto;
 }
 /* About us ends */
-
 
 /*Speaker card begins*/
 *
@@ -914,7 +935,6 @@ section{
 
 
 
-
 /* Contact Us Begins */
 
 
@@ -993,4 +1013,9 @@ section{
 
 	font-size: 1rem;
 }
+}
+
+a {
+z-index: 1000000000000;
+
 }
