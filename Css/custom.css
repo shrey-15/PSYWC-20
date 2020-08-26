@@ -44,6 +44,16 @@ html{
   color: #c4c3ca;
 	font-family: 'Muli', sans-serif;
 }
+.bannerx {
+  margin: 0 auto;
+  width: 100%;
+  
+	display: block;
+	overflow-x: hidden;
+	background-color: #fafafa;
+  color: #c4c3ca;
+	font-family: 'Muli', sans-serif;
+}
 ::selection {
 	background-color: #000;
   color: #fff;
@@ -118,10 +128,10 @@ a:hover{
 	writing-mode: vertical-lr;
 	font-size: 18vw;
 	line-height: 1;
-	color: rgba(20,20,2,.1);
+	color: rgba(131, 131, 129, 0.1);
 	background: linear-gradient(90deg, rgba(200,200,200,0), rgba(200,200,200,0.35));
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: rgb(200,200,200,0.7);
+	-webkit-text-fill-color: rgba(200, 200, 200, 0.404);
 	font-weight: 900;
 	z-index: 1;
 }
@@ -228,7 +238,7 @@ a:hover{
 }
 .case-study-wrapper .case-study-name {
 	margin: 5px;
-	//display: inline-block;
+	/* display: inline-block; */
 }
 .case-study-wrapper .case-study-name a {
 	position: relative;
@@ -554,8 +564,8 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%
-  z-index: 99999999999999999999;
+  width: 100%;
+  z-index: 99999999999999;
 }
 .nav-link {
   color: var(--light-shades) !important;
@@ -836,7 +846,7 @@ section{
   box-shadow: .5rem .5rem 2rem rgba(0,0,0,0.2);
 }
 .card .card-img{
-  width:100%
+  width:100%;
   height: 14rem;
   object-fit: cover;
   -webkit-clip-path: polygon(0 0, 100% 0 , 100% 50%, 0% 100%);
@@ -1047,12 +1057,26 @@ section{
   #ip{
     text-align: center;
   }
-  .mapouter{
-    width: 80%;
+  .mapouter,.gmap_canvas{
+    width: 100%;
   }
   .job-title {
 
 	font-size: 1rem;
+}
+.case-study-images li .img-hero-background img {
+  width: 100%;
+  height: 40vh;
+  display: block;
+}
+.case-study-images li .hero-number-back {
+  bottom: 15%;
+}
+.case-study-images li .hero-number {
+  bottom: 21%;
+}
+.case-study-images li .hero-number-fixed {
+  bottom: 21%;
 }
 }
 
