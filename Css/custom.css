@@ -439,6 +439,22 @@ a:hover{
 .smalltext {
 	display: none;
 }
+#sch{
+  font-size: 500%;
+  color: black;
+  padding: 2vw;
+text-align: center;
+text-transform: uppercase;
+font-size: 700%;
+letter-spacing: 3px;
+margin-right: -3px;
+margin-bottom: 1rem;
+margin-top: 5rem;
+text-align: center;
+color: var(--main-brand);
+position: relative;
+
+}
 /* #Media
 ================================================== */
 
@@ -460,6 +476,8 @@ a:hover{
 	object-fit: scale-down;
 	max-width: 100%;
 }
+div#womennn  {order: 2;}
+div#wie  {order: 1;}
 }
 
 @media (max-width: 767px) {
@@ -467,6 +485,7 @@ a:hover{
     background-color: rgba(31,32,41,.95);
     box-shadow: 0 0 10px rgba(0,0,0,.8);
   }
+
 	.case-study-wrapper .case-study-name a {
 		font-size: 11px;
 		letter-spacing: 1px;
@@ -486,7 +505,8 @@ a:hover{
 	.fulltext {
 	display: none;
 }
-
+div#womennn  {order: 2;}
+div#wie  {order: 1;}
 }
 
 /* #Link to page
@@ -981,6 +1001,15 @@ section{
   #sub-head{
     font-size: 200%;
   }
+  #ap{
+    text-align:center;
+    justify-content: center;
+
+  }
+  #si{
+    text-align: center;
+    justify-content: center;
+  }
 
   .banneerr {
 	width: 100vw;
@@ -1014,6 +1043,9 @@ section{
   }
   #content{
     order: 2;
+  }
+  #ip{
+    text-align: center;
   }
   .mapouter{
     width: 80%;
