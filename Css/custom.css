@@ -853,6 +853,7 @@ body {
 /* Meet the Team Section */
 .teamimg{
   width: 100%;
+  padding: 2vw;
 }
 .meet{
   margin-top: 5vw;
