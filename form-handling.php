@@ -72,7 +72,7 @@ else{
          //echo "<br>Data recorded successfully<br>";
          	$emailto = $email;
         	$subject = "Confirmation Email";
-        	$message="Hi ".$firstName."! Your registraion was successful.";
+        	$message="Hi ".$firstName."! Your registration was successful.";
         	ini_set( 'display_errors', 1 );
             error_reporting( E_ALL );
             $from = "contact@psywc.in";
