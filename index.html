@@ -25,6 +25,9 @@
 <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
 
 <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+<link rel="stylesheet" href="./Css/custom.css">
+
 <!-------Js Framworks--------->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
   integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -36,6 +39,8 @@
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
 <script type="text/javascript" src="Js/scroll_indicator.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 <!------Body Starts--->
 
@@ -56,19 +61,19 @@
         <li class="nav-item">
           <a class="nav-link" href="#about">About</a>
         </li>
-        <li class="nav-item dropdown">
+        <!--<li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
             Program
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#speakers">Speakers</a>
-            <a class="dropdown-item" href="#schedule">Schedule</a>
-            <!--<a class="dropdown-item" href="#welcomeguide">Welcome Guide</a>--->
-            <a class="dropdown-item" href="meet-the-team.html">Team</a>
-            <a class="dropdown-item" href="developer.html">Developers</a>
-          </div>
-        </li>
+          </a>-->
+        <!--<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">-->
+        <li class="nav-item active"><a class="nav-link" href="#speakerss">Speakers</a></li>
+        <li class="nav-item active"><a class="nav-link" href="#schedule">Schedule</a></li>
+        <!--<a class="dropdown-item" href="#welcomeguide">Welcome Guide</a>--->
+        <li class="nav-item active"><a class="nav-link" href="meet-the-team.html">Team</a></li>
+        <li class="nav-item active"><a class="nav-link" href="https://ieeepunesection.org/">Visit IEEE Pune Section </a></li>
+
+
         <!--li class="nav-item">
           <a class="nav-link" href="#sponsors">Sponsors</a>
         </li--->
@@ -78,12 +83,14 @@
         <li class="nav-item">
           <a class="nav-link" href="#tickets">Registration</a>
         </li>--->
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="#contact">Contact</a>
         </li>
       </ul>
     </div>
   </nav>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+  <script src="./navbar.js"></script>
   <!------Navbar Ends-------->
 
   <!---Scroll indicator starts----->
@@ -129,22 +136,23 @@
   <!-- partial:index.partial.html -->
   <div class="" style="width: 105%;">
     <div class="row banner">
-      <div class="shadow-title parallax-top-shadow" style="color: black;">IEEE</div>
+      <div class="shadow-title parallax-top-shadow" style="color:black;">IEEE</div>
       <div class="section-parallax parallax-00"
         style="background-image: url('http://www.ivang-design.com/svg-load/parallax/parallax-0.png');"></div>
       <div class="section-parallax parallax-01"
         style="background-image: url('http://www.ivang-design.com/svg-load/parallax/parallax-01.png');"></div>
 
-      <div class="section full-height">
+      <div class="section full-height top-head">
         <div class="section-title-wrap">
           <div class="container-fluid">
-            <div class="row" style="margin-top: -20vh;">
+            <div class="row" style="margin-top: 10vh;">
               <div class="col-12 text-center parallax-fade-top">
-                <img src="./img/logos/PSYWC20.png" style="width: 40%;"><br><br>
+                <img class="ips" src="./img/logos/pune.png " align="left"><br>
+                <img class="psy" src="./img/logos/PSYWC20.png"><br><br>
 
                 <!--<img style="width: 150px;" src="https://ieeepunesection.org/wp-content/uploads/cropped-logoieee-11-1.png">-->
-                <div class="xhead">
-                  <h2>All India Student/YP/WIE</h2><br>
+                <div class="xhead m-3">
+                  <h2>All India Student/ Young Professionals/ Women In Engineering</h2><br>
                   <h2><b>15-16-17 September 2020, Pune</b></h2>
                 </div>
               </div>
@@ -156,25 +164,180 @@
   </div>
   <!-- Intro Banner Ends -->
   <!-- Schedule Begins -->
-  <div class="container-fluid d-flex justify-content-center">
-    <div class="row psywcsched d-flex justify-content-center">
-      <img style="width:100vw;" src="./img/banner/poster 2.png">
+  <div class="container-fluid " id="schedule">
+    <div class="row d-flex justify-content-center mb-2" style="background-color:#b76572;">
+      <h2 id="heading">Schedule</h2>
     </div>
+
+
+    <div class="row psywcsched d-flex justify-content-center mb-2">
+      <div class="col-12 d-flex justify-content-center">
+        <img src="./img/banner/poster 2.png" style="width: 100%;z-index: 999;padding: 5vw;">
+      </div>
+    </div>
+
   </div>
+
   <!-- Schedule Ends -->
 
+
+
+  <!--Speakers begins-->
+
+
+  <section id="speakers" class="d-flex ">
+    <div class="container-fluid">
+      <div class="row d-flex justify-content-center " style="background-color:#F0bb68;">
+        <a id="speakerss">
+          <h2 id="heading">Speakers</h2>
+        </a>
+      </div>
+      <div class="row d-flex justify-content-center p-5">
+        <div class="col-md-4 p-2">
+          <a id="oonee" class="anc" href="https://www.linkedin.com/in/dinanathkholkar">
+            <div class="card">
+  
+  
+              <div class="card-top"></div>
+              <img src="img/speakers/Dinanath_Kholkar.jpeg" alt="profile image" class="profile-img" />
+              <h1>Dinanath Kholkar</h1>
+              <p class="job-title">
+                Vice President and Global Head of Analytics & Insights at TCS | Chair, Industry Relations IEEE Pune
+                Section
+              </p>
+              <p class="about">
+                <b>September 15 2020 </b><br /> 10:30AM onwards
+  
+              </p>
+  
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 p-2">
+          
+        <a id="ttwoo" href="https://www.linkedin.com/in/rohan-agawane-9370a092">
+          <div class="card">
+
+
+            <div class="card-top2"></div>
+            <img src="img/speakers/Rohan_Agawane.jpeg" alt="profile image" class="profile-img" />
+            <h1>Rohan Agawane</h1>
+            <p class="job-title">
+              Indian Institute of Management, Ahmedabad<br />Indian Institute of Technology, Bombay
+            </p>
+            <p class="about">
+              <b>September 15 2020</b><br /> 01:30PM onwards
+
+
+            </p>
+
+
+          </div>
+        </a>
+        </div>
+        <div class="col-md-4 p-2">
+          <a id="tthreee" href="https://www.linkedin.com/in/sudeshna-choudhury-31335692">
+
+            <div class="card">
+  
+  
+              <div class="card-top"></div>
+              <img src="img/speakers/Sudeshna_Choudhury.jpeg" alt="profile image" class="profile-img" />
+              <h1>Sudeshna Choudhury</h1>
+              <p class="job-title">
+                Analytics and Insights Business Partner , Utilities at Tata Consultancy Services<br /> Chapter Lead
+                Kolkata , India
+              </p>
+              <p class="about">
+                <b>September 16 2020</b><br /> 10:30AM onwards
+  
+              </p>
+  
+  
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center p-5 mb-5">
+        <div class="col-md-4 p-2">
+          <a id="ffourr" href="https://www.linkedin.com/in/aparanjape/">
+            <div class="card">
+  
+  
+              <div class="card-top2"></div>
+              <img src="img/speakers/Amit_Paranjape.jpeg" alt="profile image" class="profile-img" />
+              <h1>Amit Paranjape </h1>
+              <p class="job-title">
+                Co-Founder PuneTech, Co-Founder ReliScore, TiE Pune Charter Member, Co Chairman at IT/ITeS Committee
+              </p>
+              <p class="about">
+                <b>September 16 2020</b><br /> 01:30PM onwards
+  
+              </p>
+  
+  
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 p-2">
+          <a id="ffivee" href="https://www.linkedin.com/in/puneet-kumar-mishra-252aba5">
+            <div class="card">
+  
+  
+              <div class="card-top"></div>
+              <img src="img/speakers/Puneet_Kumar_Mishra.jpeg" alt="profile image" class="profile-img" />
+              <h1>Punnet Kumar Mishra</h1>
+              <p class="job-title">
+                Head, Satellite Antenna Characterization, Test & Design Section at U R RAO SATELLITE CENTRE
+              </p>
+              <p class="about">
+                <b>September 17 2020</b><br /> 10:30AM onwards
+  
+              </p>
+  
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 p-2">
+          <a id="ssixx" href="http://www.linkedin.com/in/kiranydeshpande">
+            <div class="card">
+  
+  
+              <div class="card-top2"></div>
+              <img src="img/speakers/Kiran_Deshpande.jpeg" alt="profile image" class="profile-img" />
+              <h1>Kiran Deshpande</h1>
+              <p class="job-title">
+                Co-Founder-Mojo Networks Ex President TiE Pune Angel Investor: GigIndia, Extr Advisor-Saankhya Labs
+              </p>
+              <p class="about">
+                <b>September 17 2020</b><br /> 01:30PM onwards
+  
+              </p>
+  
+  
+            </div>
+          </a>
+        </div>
+      </div>
+
+  </section>
+
+  </div>
+  <!--Speakers ends-->
 
 
 
   <!-- About us begins-->
   <div class="container-fluid full-height-section" id="about1">
     <div class="row d-flex justify-content-center" style="background-color:#97b8d0;">
-      <h1 id="heading">About Us</h1>
+      <a id="about">
+        <h1 id="heading">About Us</h1>
+      </a>
     </div>
     <div class="row aboutus d-flex justify-content-center">
       <div class="col-12">
         <h4 id="sub-head">
-          Pune Section Student/YP/WIE Congress 2020
+          Pune Section Student/Young Professionals/ Women In Engineering Congress 2020
         </h4>
         <img id="logo" src="img/logos/PSYWC20.png">
         <h6 id="content">
@@ -255,7 +418,7 @@
         <div class="row d-flex justify-content-center">
 
 
-          <div class="col-md-8 col-12 d-flex justify-content-center align-items-center">
+          <div class="col-md-8 col-12 d-flex justify-content-center align-items-center" id="womennn">
             <h6 id="content">
               IEEE Women in Engineering (WIE) is a global network of IEEE members and volunteers dedicated to promoting
               women
@@ -283,41 +446,45 @@
 
 
 
-
+  <div class="row d-flex justify-content-center" style="background-color:#4e6aaf;">
+    <a id="about">
+      <h1 id="heading">Seminars</h1>
+    </a>
+  </div>
 
   <!-- Seminar Name card begins-->
-<div class="banner" style="background-color: #3859ab; padding-bottom: 10%;">
+  <div class="bannerx" style="background-color: #97b8d0; padding-bottom: 10%;">
     <div class="section full-height z-bigger">
       <ul class="case-study-wrapper">
         <li class="case-study-name">
-	  <div class="fulltext"><a href="#" class="hover-target">IEEE&nbsp;</a><br></div>
-	  <div class="smalltext"><a href="#" class="hover-target">IEEE&nbsp;</a><br></div>
-	</li>
-        <li class="case-study-name">
-          <div class="fulltext"><a href="#" class="hover-target">MBA&nbsp;</a><br></div>
-	  <div class="smalltext"><a href="#" class="hover-target">MBA&nbsp;</a><br></div>
+          <div class="fulltext"><a href="#oonee" class="hover-target">IEEE&nbsp;</a><br></div>
+          <div class="smalltext"><a href="#oonee" class="hover-target">IEEE&nbsp;</a><br></div></a>
         </li>
         <li class="case-study-name">
-          <div class="fulltext"><a href="#" class="hover-target">Utility&nbsp;</a><br></div>
-	  <div class="smalltext"><a href="#" class="hover-target">Utility&nbsp;</a><br></div>
+          <div class="fulltext"><a href="#ttwoo" class="hover-target">MBA&nbsp;</a><br></div>
+          <div class="smalltext"><a href="#ttwoo" class="hover-target">MBA&nbsp;</a><br></div>
         </li>
         <li class="case-study-name">
-          <div class="fulltext"><a href="#" class="hover-target">Start-ups&nbsp;</a><br></div>
-	  <div class="smalltext"><a href="#" class="hover-target">Start-ups&nbsp;</a><br></div>
+          <div class="fulltext"><a href="#tthreee" class="hover-target">Utility&nbsp;</a><br></div>
+          <div class="smalltext"><a href="#tthreee" class="hover-target">Utility&nbsp;</a><br></div>
         </li>
         <li class="case-study-name">
-          <div class="fulltext"><a href="#" class="hover-target">ISRO&nbsp;</a><br></div>
-	  <div class="smalltext"><a href="#" class="hover-target">ISRO&nbsp;</a><br></div>
+          <div class="fulltext"><a href="#ffourr" class="hover-target">Start-ups&nbsp;</a><br></div>
+          <div class="smalltext"><a href="#ffourr" class="hover-target">Start-ups&nbsp;</a><br></div>
         </li>
         <li class="case-study-name">
-          <div class="fulltext"><a href="#" class="hover-target">Disaster Management&nbsp;</a><br></div>
-	  <div class="smalltext"><a href="#" class="hover-target">Disaster Management&nbsp;</a></div>
+          <div class="fulltext"><a href="#ffivee" class="hover-target">ISRO&nbsp;</a><br></div>
+          <div class="smalltext"><a href="#ffivee" class="hover-target">ISRO&nbsp;</a><br></div>
+        </li>
+        <li class="case-study-name">
+          <div class="fulltext"><a href="#ssixx" class="hover-target">Disaster Management&nbsp;</a><br></div>
+          <div class="smalltext"><a href="#ssixx" class="hover-target">Disaster Management&nbsp;</a></div>
         </li>
       </ul>
       <ul class="case-study-images">
         <li>
           <div class="img-hero-background">
-            <img class="imgone" src="https://site.ieee.org/r9-sac/files/2016/08/Banner_04.jpg" alt="">
+            <img class="imgone" src="./img/logos/483002.jpg" alt="">
           </div>
           <div class="hero-number-back">01</div>
           <div class="hero-number">01</div>
@@ -342,7 +509,7 @@
           <div class="hero-number-back">03</div>
           <div class="hero-number">03</div>
           <div class="case-study-title fulltext">OPPORTUNITIES IN THE UTILITY SECTOR</div>
-	</li>
+        </li>
         <li>
           <div class="img-hero-background">
             <img class="imgfour"
@@ -375,178 +542,35 @@
         </li>
       </ul>
     </div>
-</div>
+  </div>
 
 
 
-    <!-- Scroll back to top
+  <!-- Scroll back to top
   ================================================== -->
-    <div class="scroll-to-top hover-target">&uarr;</div>
-    <!-- Page cursor
-  ================================================== -->
-
-    <div class='cursor' id="cursor"></div>
-    <div class='cursor2' id="cursor2"></div>
-    <div class='cursor3' id="cursor3"></div>
-
-    <!-- Link to page
+  <div class="scroll-to-top hover-target"></div>
+  <!-- Page cursor
   ================================================== -->
 
-    
-    <!-- partial -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-    <script src="./Js/script.js"></script>
+  <div class='cursor' id="cursor"></div>
+  <div class='cursor2' id="cursor2"></div>
+  <div class='cursor3' id="cursor3"></div>
+
+  <!-- Link to page
+  ================================================== -->
+
+
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script src="./Js/script.js"></script>
 
 
   </div>
-<br><br><br>
+  
 
   <!-- Seminar Name Card ends -->
 
 
-
-
-  <!--Speakers begins-->
-
-
-  <section id="speakers">
-    <div class="container-fluid" style="margin-top: -30vh;">
-      <div class="row d-flex justify-content-center" style="background-color:#b76572;">
-        <h2 id="heading">Speakers</h2>
-      </div>
-      <div class="card-wrapper">
-        <a class="anc" href="https://www.linkedin.com/in/dinanathkholkar">
-          <div class="card">
-
-
-            <img src="img/speakers/bg.jfif" alt="card background" class="card-img" />
-            <img src="img/speakers/Dinanath_Kholkar.jpeg" alt="profile image" class="profile-img" />
-            <h1>Dinanath Kholkar</h1>
-            <p class="job-title">
-              Vice President and Global Head of Analytics & Insights at TCS | Chair, Industry Relations IEEE Pune
-              Section
-            </p>
-            <p class="about">
-              <b>September 15 2020 </b><br /> 10:30AM onwards
-
-            </p>
-
-            <!-- <ul class="social-media">
-                      <a href="https://www.linkedin.com/in/dinanathkholkar">
-
-                         <li >
-                           <a href="https://www.linkedin.com/in/dinanathkholkar"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-                           </li>
-
-                     </ul> -->
-
-          </div>
-        </a>
-        <a href="https://www.linkedin.com/in/rohan-agawane-9370a092">
-          <div class="card">
-
-
-            <img src="img/speakers/bg.jfif" alt="card background" class="card-img" />
-            <img src="img/speakers/Rohan_Agawane.jpeg" alt="profile image" class="profile-img" />
-            <h1>Rohan Agawane</h1>
-            <p class="job-title">
-              Indian Institute of Management,<br /> Ahmedabad<br />Indian Institute of Technology, Bombay
-            </p>
-            <p class="about">
-              <b>September 15 2020</b><br /> 01:30PM onwards
-
-
-            </p>
-
-
-          </div>
-        </a>
-
-
-
-
-        <a href="https://www.linkedin.com/in/sudeshna-choudhury-31335692">
-
-          <div class="card">
-
-
-            <img src="img/speakers/bg.jfif" alt="card background" class="card-img" />
-            <img src="img/speakers/Sudeshna_Choudhury.jpeg" alt="profile image" class="profile-img" />
-            <h1>Sudeshna Choudhury</h1>
-            <p class="job-title">
-              Analytics and Insights Business Partner , Utilities at Tata Consultancy Services<br /> Chapter Lead
-              Kolkata , India
-            </p>
-            <p class="about">
-              <b>September 16 2020</b><br /> 10:30AM onwards
-
-            </p>
-
-
-          </div>
-        </a>
-        <a href="https://www.linkedin.com/in/aparanjape/">
-          <div class="card">
-
-
-            <img src="img/speakers/bg.jfif" alt="card background" class="card-img" />
-            <img src="img/speakers/Amit_Paranjape.jpeg" alt="profile image" class="profile-img" />
-            <h1>Amit Paranjape </h1>
-            <p class="job-title">
-              Co-Founder PuneTech, Co-Founder ReliScore, TiE Pune Charter Member<br /> Co Chairman at IT/ITeS Committee
-            </p>
-            <p class="about">
-              <b>September 16 2020</b><br /> 01:30PM onwards
-
-            </p>
-
-
-          </div>
-        </a>
-
-        <a href="https://www.linkedin.com/in/puneet-kumar-mishra-252aba5">
-          <div class="card">
-
-
-            <img src="img/speakers/bg.jfif" alt="card background" class="card-img" />
-            <img src="img/speakers/Puneet_Kumar_Mishra.jpeg" alt="profile image" class="profile-img" />
-            <h1>Punnet Kumar Mishra</h1>
-            <p class="job-title">
-              Head, Satellite Antenna Characterization, Test & Design Section at U R RAO SATELLITE CENTRE
-            </p>
-            <p class="about">
-              <b>September 17 2020</b><br /> 10:30AM onwards
-
-            </p>
-
-          </div>
-        </a>
-        <a href="http://www.linkedin.com/in/kiranydeshpande">
-          <div class="card">
-
-
-            <img src="img/speakers/bg.jfif" alt="card background" class="card-img" />
-            <img src="img/speakers/Kiran_Deshpande.jpeg" alt="profile image" class="profile-img" />
-            <h1>Kiran Deshpande</h1>
-            <p class="job-title">
-              Co-Founder-Mojo Networks Ex President TiE Pune Angel Investor: GigIndia, Extr Advisor-Saankhya Labs
-            </p>
-            <p class="about">
-              <b>September 17 2020</b><br /> 01:30PM onwards
-
-            </p>
-
-
-          </div>
-        </a>
-
-
-      </div>
-
-  </section>
-
-  </div>
-  <!--Speakers ends-->
 
 
 
@@ -555,8 +579,10 @@
 
   <!--Contact Us Begins-->
 
-  <div class="row d-flex justify-content-center" style="background-color:#F0bb68;">
-    <h2 id="heading">Contact Us</h2>
+  <div class="row d-flex justify-content-center" style="background-color:#b76572;">
+    <a id="contact">
+      <h2 id="heading">Contact Us</h2>
+    </a>
   </div>
 
   <div class="contactUs">
@@ -569,31 +595,33 @@
           <!-- 1 -->
           <div class="col-md-4 col-12 d-flex justify-content-center ">
             <div class="card" style="width: 19rem;">
-              <div class="card-body">
+              <div class="card-body" style="color:#b76572">
                 <h5 class="card-title">Gaurav Sonawane</h5>
                 <h6 class="card-subtitle mb-2 text-muted">SSR</h6>
                 <p class="card-text"><span class="bold">Email : </span>gauravsonawane@ieee.org</p>
-
+                <p class="card-text"><span class="bold">Mobile : </span>+91 96653 09889</p>
               </div>
             </div>
           </div>
           <!-- 2 -->
           <div class="col-md-4 col-12 d-flex justify-content-center">
             <div class="card" style="width: 18rem;">
-              <div class="card-body">
+              <div class="card-body" style="color:#b76572">
                 <h5 class="card-title">Siddharth Saoji</h5>
                 <h6 class="card-subtitle mb-2 text-muted">CoSSR</h6>
                 <p class="card-text"><span class="bold">Email : </span>sidsaoji20@gmail.com</p>
+                <p class="card-text"><span class="bold">Mobile : </span>+91 77740 04230</p>
               </div>
             </div>
           </div>
           <!-- 3 -->
           <div class="col-md-4 col-12 d-flex justify-content-center ">
             <div class="card" style="width: 18rem;">
-              <div class="card-body">
+              <div class="card-body" style="color:#b76572">
                 <h5 class="card-title">Vaishnavi Nair</h5>
                 <h6 class="card-subtitle mb-2 text-muted">CoSSR</h6>
                 <p class="card-text"><span class="bold">Email : </span>vaishnavi9938@gmail.com</p>
+                <p class="card-text"><span class="bold">Mobile : </span>+91 97674 38428</p>
 
               </div>
             </div>
@@ -602,19 +630,7 @@
         <!-- <div class="cu_heading">
   CONTACT US
 </div> -->
-        <div class="row d-flex justify-content-center mb-5">
-
-          <div class="mapouter d-flex justify-content-center">
-            <div class="gmap_canvas">
-              <iframe width="600" height="500" id="gmap_canvas"
-                src="https://maps.google.com/maps?ll=18.5204303,73.8567437&q=Pune&t=&z=10&ie=UTF8&iwloc=&output=embed"
-                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-
-
-            </div>
-          </div>
-
-        </div>
+      
       </div>
 
 
@@ -640,11 +656,11 @@
     <div class="footer" id="contact">
       <div class="row">
         <div class="col" style="padding-right:6vw; padding-left: 6vw;">
-          <div class="row">
+          <div class="row" id="ap">
             <h1>About PSYWC</h1>
           </div>
           <div class="row">
-            <p>The Congress provides two days of connection, inspiration, motivation, effective networking, personal
+            <p class="footer-text">The Congress provides connection, inspiration, motivation, effective networking, personal
               development and skill building for hundreds of students/young professionals. Expert speakers lead
               workshops,
               seminars on recent technologies, including businesses and entrepreneurship, work life balance and more.
@@ -654,36 +670,35 @@
           </div>
         </div>
         <div class="col" style="max-width: 400px; min-width: 360px; padding-right:6vw; padding-left: 6vw;">
-          <div class="row">
-            <h1>&nbsp;&nbsp;</h1>
-          </div>
-          <div class="row">
+          
+          <div class="row footer-links">
             <div class="col">
               <div class="row"><a class="nav-link" href="#">Home</a></div>
               <div class="row"><a class="nav-link" href="#about">About</a></div>
-              <div class="row"><a class="nav-link" href="#speakers">Speakers</a></div>
+              <div class="row"><a class="nav-link" href="#speakerss">Speakers</a></div>
             </div>
             <div class="col">
               <div class="row"><a class="nav-link" href="#schedule">Schedule</a></div>
               <div class="row"><a class="nav-link" href="#contact">Contact</a></div>
-              <div class="row"><a class="nav-link" href="developer.html">Developers</a></div>
+              <div class="row"><a class="nav-link" href="./developer.html">Developers</a></div>
             </div>
             <div></div>
           </div>
         </div>
       </div>
       <div class="row">
-        <hr style="background-color: grey; height: 0.6px; width: 85vw;">
+        <hr style="background-color: #6c87ce; height: 0.7px; width: 100vw;">
       </div>
       <div class="row">
-        <div class="col" style="padding-right:6vw; padding-left: 6vw;">Copyright © 2020 PSYWC. All rights reserved
+        <div class="col" id="copyright" style="padding-right:6vw; padding-left: 6vw;">Copyright © 2020 PSYWC. All rights reserved
         </div>
-        <div class="col"
-          style="max-width: 400px; min-width: 360px; padding-right:6vw; padding-left: 6vw; text-align: right;">
-          <a href="" style="padding-right: 10px;"><img class="icon" src="Bootstrap/icons/facebook.svg"></a>
-          <a href="" style="padding-right: 10px;"><img class="icon" src="Bootstrap/icons/twitter.svg"></a>
-          <a href="" style="padding-right: 10px;"><img class="icon" src="Bootstrap/icons/instagram.svg"></a>
-          <a href=""><img class="icon" src="Bootstrap/icons/linkedin.svg"></a>
+        <div class="col" id="si" style="max-width: 400px; min-width: 360px; padding-right:6vw; padding-left: 6vw;">
+          <a href="https://www.facebook.com/psywc20/" style="padding-right: 10px;"><img class="icon"
+              src="Bootstrap/icons/facebook.svg"></a>
+          <a href="" style="padding-right: 10px;"><img class="icon" src="img/logos/twitter-icon-18-256.png"></a>
+          <a href="https://instagram.com/ieeepunesection?igshid=1x48pce9cor1t" style="padding-right: 10px;"><img
+              class="icon" src="img/logos/white-instagram-logo-png-7.png"></a>
+          <a href="https://www.linkedin.com/company/43365826"><img class="icon" src="img/logos/linkedin-icon-18-256.png"></a>
 
         </div>
       </div>
