@@ -340,6 +340,7 @@ transition-delay: 0s;
 	height: 100vh;
 }
 .section.z-bigger {
+  height:100vh;
 	z-index: 100;
 }
 .section.z-bigger-2 {
@@ -1338,6 +1339,12 @@ letter-spacing: 3px;
   #copyright{
     order:2;
   }
+
+  .section.z-bigger {
+    height:100vw;
+    z-index: 100;
+  }
+
   .WRAPPER {
    display: none;
    justify-content: center;
