@@ -1061,7 +1061,7 @@ section{
 }
 .card h1:hover{
   font-size: 20px;
-  color: rgb(185, 110, 11);
+  color:#545288;
   margin: .3rem 0;
 }
 .job-title{
