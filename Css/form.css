@@ -7,11 +7,11 @@
   --lighter-accent: #e5ebf091;
 }
 body {
-  background-color:var(--light-shades);
+  background-color:#fff;
   font-family: "Avenir Next", "Avenir", "Helvetica Neue", Helvetica, Arial,
     sans-serif;
   font-size: 16px;
-  color: var(--dark-shades);
+  color: var(--light-shades);
   line-height: 1.5;
 }
 
@@ -23,31 +23,25 @@ h1 {
   letter-spacing: 4px;
   text-align: center;
   font-size:3vw!important;
+  background-color: var(--dark-shades);
+  margin:0!important;
+  padding: 3vw;
+  z-index: 99999999999;
 }
 
-@media screen and (max-width:768px){
-  h1 {
-    font-family: "Texta", "Avenir Next", "Avenir", "Helvetica Neue", Helvetica,
-      Arial, sans-serif;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    text-align: center;
-    font-size:10vw!important;
-  }
-}
+
 
 h2 {
+  padding-top: 2vw;
   font-weight: 600;
-  font-size: 24px;
-  color:var(--dark-accent);
-  text-align: center;
+  font-size: 28px;
+  color:#5167a0;
+  text-align: left;
 }
 
 .container {
-  max-width: 320px;
   margin: 0 auto;
-  padding: 20px 16px 40px 16px;
+  padding: 2vw 0;
   transform: translateZ(0);
   text-align: center;
 }
@@ -68,7 +62,7 @@ h2 {
   border: 0;
   background: none;
   padding: 16px 0 16px 0;
-  font-size: 24px;
+  font-size: 18px;
   outline: 0;
   width: 100%;
   tap-highlight-color: rgba(0, 0, 0, 0);
@@ -89,13 +83,11 @@ h2 {
 p {
   position: relative;
   display: block;
-  padding: 8px 0 8px 0;
   text-transform: uppercase;
-  font-size: 14px;
   letter-spacing: 0.0875em;
   font-weight: 500;
   text-align: left;
-  color: rgba(49, 47, 47, 0.788)!important;
+  color: rgba(49, 47, 47, 0.788);
 }
 
 p::before {
@@ -152,7 +144,7 @@ p::after {
   left: 0;
   transform: scaleX(1);
   white-space: nowrap;
-  color: #333;
+  color: rgb(50, 122, 204);
   background-image: linear-gradient(
     to right,
     #39689e 50%,
@@ -219,17 +211,17 @@ p::after {
 
 .ui-input input.error,
 .ui-input input:invalid {
-  color: var(--dark-accent);
+  color: #25265e;
 }
 .ui-input input.error + label::after,
 .ui-input input:invalid + label::after {
-  background-color: var(--dark-accent);
+  background-color: #25265e;
 }
 .ui-input input.error + label span::after,
 .ui-input input:invalid + label span::after {
   background-image: linear-gradient(
     to right,
-    var(--dark-accent) 50%,
+    #25265e 50%,
     rgba(255, 255, 255, 0) 0%
   );
   background-position: 0% 50%;
@@ -306,5 +298,46 @@ p::after {
   to {
     opacity: 1;
     transform: translate3d(0, 0, 0);
+  }
+}
+
+.form-container{
+  border-radius: 15px;
+  margin-left: 15vw;
+  overflow:auto;
+  box-shadow: 2px 5px 10px rgba(51, 51, 51, 0.404);
+}
+
+.main{
+  margin-top: 2vw;
+  z-index: 99999;
+}
+#illustration{
+  margin-left: 2vw;
+  position: fixed;
+  width:35vw;
+  height:35vw;
+  margin-top: -2vw;
+}
+
+.fixed{
+  position: fixed;
+}
+
+@media screen and (max-width:768px){
+  h1 {
+    font-family: "Texta", "Avenir Next", "Avenir", "Helvetica Neue", Helvetica,
+      Arial, sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+    font-size:10vw!important;
+  }
+  .form-container{
+    border-radius: 15px;
+    margin-left: 0vw;
+    overflow:auto;
+    box-shadow: 2px 5px 10px rgba(51, 51, 51, 0.404);
   }
 }
