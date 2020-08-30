@@ -18,16 +18,30 @@ body {
 h1 {
   font-family: "Texta", "Avenir Next", "Avenir", "Helvetica Neue", Helvetica,
     Arial, sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 4px;
   text-align: center;
+  font-size:3vw!important;
+}
+
+@media screen and (max-width:768px){
+  h1 {
+    font-family: "Texta", "Avenir Next", "Avenir", "Helvetica Neue", Helvetica,
+      Arial, sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+    font-size:10vw!important;
+  }
 }
 
 h2 {
-  font-weight: 400;
+  font-weight: 600;
   font-size: 24px;
   color:var(--dark-accent);
+  text-align: center;
 }
 
 .container {
