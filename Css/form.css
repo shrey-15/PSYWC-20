@@ -239,9 +239,9 @@ p::after {
   color: white;
 }
 
-.__first, .__second, .__third, .__fourth {
+.__first, .__second, .__third, .__fourth, .__fifth, .__sixth, .__seventh {
   animation-name: fadeIn;
-  animation-duration: 180ms;
+  animation-duration: 200ms;
   animation-fill-mode: both;
   animation-iteration-count: 1;
 }
@@ -251,7 +251,7 @@ p::after {
 }
 
 .__second {
-  animation-delay: 80ms;
+  animation-delay: 90ms;
 }
 
 .__third {
