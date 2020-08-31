@@ -71,8 +71,29 @@ else{
      if ($conn->query($sql) === TRUE) {
          //echo "<br>Data recorded successfully<br>";
          	$emailto = $email;
-        	$subject = "Confirmation Email";
-        	$message="Hi ".$firstName."! Your registration was successful.";
+        	$subject = "PSYWC : Thank you for registering!";
+        	$message=
+"Dear Participant,
+Your registration for IEEE Pune Section Student, Young Professionals, Women in Engineering Congress PSYWC'2020 is successful. 
+We welcome you to the very vibrant and active community of IEEE Pune Section. 
+To receive updates about the Congress, please join the following WhatsApp/Telegram group : 
+            
+https://chat.whatsapp.com/GEsvNQwal5O7kXaj7GvSQw
+            
+https://t.me/joinchat/Q1iW0FFvY4K0erqmCTAHvg
+            
+            
+The Congress will be conducted from 15th - 20th September with sessions on multiple relevant domains by 
+industry experts. The sessions will be conducted on Cisco Webex Meet. 
+            
+To know more about our esteemed speakers and schedule, please visit our website psywc.in
+For more queries you can write us at gauravsonawane@ieee.org
+            
+Looking forward to see you at PSYWC'2020
+            
+Kind Regards,
+Student Activities Committee,
+IEEE Pune Section.";
         	ini_set( 'display_errors', 1 );
             error_reporting( E_ALL );
             $from = "contact@psywc.in";
