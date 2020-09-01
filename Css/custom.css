@@ -1029,10 +1029,10 @@ section{
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
-@media screen and (min-width:700px){.card:hover{
+.card:hover{
   text-decoration: none;
   transform: scale(1.1);
-}}
+}
 
 .card .card-top{
   border-top-left-radius: 15px;
