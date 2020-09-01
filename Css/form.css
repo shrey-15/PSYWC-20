@@ -1,9 +1,14 @@
 body {
-  background-color: #363E4A;
+  background-color: #fafafa;
   font-family: "Avenir Next", "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   color: #ffffff;
   line-height: 1.5;
+}
+@media screen and (max-width: 992px){
+  body{
+    background-color: #213455;
+  }
 }
 
 h1 {
@@ -18,14 +23,26 @@ h2 {
   font-weight: 400;
   font-size: 24px;
   color: rgba(255, 255, 255, 0.4);
+  text-align: center;
 }
-
+h6{
+  text-align: left;
+  color:#e66161bd;
+}
+#illustration{
+  margin-left:2vw;
+  margin-top: 3vw;
+  position: fixed;
+  width: 40vw;
+  height: 40vw;
+}
 .container {
-  max-width: 320px;
+  background-color: #213455;
+  max-width: 420px;
   margin: 0 auto;
   padding: 20px 16px 40px 16px;
   transform: translateZ(0);
-  text-align: center;
+  text-align: left;
 }
 
 .form-footer {
@@ -226,9 +243,9 @@ p::after {
   color: white;
 }
 
-.__first, .__second, .__third, .__fourth {
+.__first, .__second, .__third, .__fourth, .__fifth, .__sixth, .__seventh {
   animation-name: fadeIn;
-  animation-duration: 180ms;
+  animation-duration: 200ms;
   animation-fill-mode: both;
   animation-iteration-count: 1;
 }
