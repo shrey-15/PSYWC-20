@@ -71,7 +71,7 @@ else{
      if ($conn->query($sql) === TRUE) {
          //echo "<br>Data recorded successfully<br>";
          	$emailto = $email;
-        	$subject = "PSYWC : Thank you for registering!";
+        	$subject = "Thank you for registering!";
         	$message=
 "Dear Participant,
 Your registration for IEEE Pune Section Student, Young Professionals, Women in Engineering Congress PSYWC'2020 is successful. 
