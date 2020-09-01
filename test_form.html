@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Urpinion — Form</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<style>
+    body {
+  background-color: #363E4A;
+  font-family: "Avenir Next", "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+h1 {
+  font-family: "Texta", "Avenir Next", "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.container {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 20px 16px 40px 16px;
+  transform: translateZ(0);
+  text-align: center;
+}
+
+.form-footer {
+  margin-top: 2em;
+}
+
+.ui-input {
+  position: relative;
+  padding: 0;
+  border: 0;
+}
+
+.ui-input input {
+  font-family: "Avenir Next", "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border: 0;
+  background: none;
+  padding: 16px 0 16px 0;
+  font-size: 24px;
+  outline: 0;
+  width: 100%;
+  tap-highlight-color: rgba(0, 0, 0, 0);
+  touch-callout: none;
+}
+
+.ui-input input + label {
+  position: relative;
+  display: block;
+  padding: 8px 0 8px 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: .0875em;
+  font-weight: 500;
+  text-align: left;
+}
+
+p {
+			
+		position: relative;
+  display: block;
+  padding: 8px 0 8px 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: .0875em;
+  font-weight: 500;
+  text-align: left;
+  color : rgba(255, 255, 255, 0.2);
+}
+
+
+p::before{
+				
+		position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 1px;
+				
+				
+				
+}
+
+
+
+
+
+.ui-input input + label::before, .ui-input input + label::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 1px;
+}
+.ui-input input + label::before {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+p::after {
+				
+		transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-color: #6EB1FF;
+  height: 2px;
+}
+.ui-input input + label span {
+  position: relative;
+  color: rgba(255, 255, 255, 0.2);
+  transition: color 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+				
+				
+				
+				}
+
+.ui-input input + label::after {
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-color: #6EB1FF;
+  height: 2px;
+}
+.ui-input input + label span {
+  position: relative;
+  color: rgba(255, 255, 255, 0.2);
+  transition: color 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.ui-input input + label span::after {
+  content: attr(data-text);
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  transform: scaleX(1);
+  white-space: nowrap;
+  color: #fff;
+  background-image: linear-gradient(to right, #4A90E2 50%, rgba(255, 255, 255, 0) 0%);
+  background-position: 100% 50%;
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  backface-visibility: hidden;
+  perspective: 1000;
+  transform: translateZ(0);
+  transition: background-position 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.ui-input input:focus + label::after,
+.ui-input input.error + label::after,
+.ui-input input:invalid + label::after,
+.ui-input input.filled + label::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.ui-input input:focus + label span::after,
+.ui-input input.error + label span::after,
+.ui-input input:invalid + label span::after,
+.ui-input input.filled + label span::after {
+  background-image: linear-gradient(to right, white 50%, rgba(255, 255, 255, 0) 0%);
+  background-position: 0% 50%;
+}
+
+.ui-input input.filled {
+  color: #ffffff;
+}
+.ui-input input.filled + label::after {
+  background-color: #ffffff;
+}
+.ui-input input.filled + label span::after {
+  background-image: linear-gradient(to right, #ffffff 50%, rgba(255, 255, 255, 0) 0%);
+  background-position: 0% 50%;
+}
+
+.ui-input input:focus {
+  color: #6EB1FF;
+}
+.ui-input input:focus + label::after {
+  background-color: #6EB1FF;
+}
+.ui-input input:focus + label span::after {
+  background-image: linear-gradient(to right, #6EB1FF 50%, rgba(255, 255, 255, 0) 0%);
+  background-position: 0% 50%;
+}
+
+.ui-input input.error,
+.ui-input input:invalid {
+  color: #E66161;
+}
+.ui-input input.error + label::after,
+.ui-input input:invalid + label::after {
+  background-color: #E66161;
+}
+.ui-input input.error + label span::after,
+.ui-input input:invalid + label span::after {
+  background-image: linear-gradient(to right, #E66161 50%, rgba(255, 255, 255, 0) 0%);
+  background-position: 0% 50%;
+}
+
+.btn {
+  border: 0;
+  background-color: #50617A;
+  padding: 18px 30px;
+  font-size: 14px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: .0875em;
+  font-weight: 500;
+  color: #ffffff;
+  font-family: "Avenir Next", "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-radius: 100px;
+  outline: 0;
+  transition: background-color 300ms cubic-bezier(0.215, 0.61, 0.355, 1), color 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.btn:focus, .btn:active,
+.btn:hover {
+  background-color: #6EB1FF;
+  color: white;
+}
+
+.__first, .__second, .__third, .__fourth {
+  animation-name: fadeIn;
+  animation-duration: 180ms;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+}
+
+.__first {
+  animation-delay: 0;
+}
+
+.__second {
+  animation-delay: 80ms;
+}
+
+.__third {
+  animation-delay: 180ms;
+}
+
+.__fourth {
+  animation-delay: 360ms;
+}
+
+.__fifth {
+  animation-delay: 540ms;
+}
+
+.__sixth {
+  animation-delay: 720ms;
+}
+
+.__seventh {
+  animation-delay: 900ms;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -25%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+</style>
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <div class="container">
+    <h1>IEEE CONGRESS</h1>
+    <h2>Registration</h2>
+    <form class="form" action="test.php" method="post">
+
+      <fieldset class="form-fieldset ui-input __first">
+        <input type="text" id="firstName" name="firstName" tabindex="0" />
+        <label for="firstName">
+          <span data-text="First Name">First Name</span>
+        </label>
+      </fieldset>
+
+      <fieldset class="form-fieldset ui-input __second">
+        <input type="text" id="lastName" name="lastName" tabindex="0" />
+        <label for="lastName">
+          <span data-text="Last Name">Last Name</span>
+        </label>
+      </fieldset>
+
+      <fieldset class="form-fieldset ui-input __second">
+        <input type="email" id="email" name="email" tabindex="0" />
+        <label for="email">
+          <span data-text="E-mail Address">E-mail Address</span>
+        </label>
+      </fieldset>
+
+      <fieldset class="form-fieldset ui-input __third">
+        <input type="number" id="phoneNumber" name="phoneNumber" tabindex="0" />
+        <label for="phoneNumber">
+          <span data-text="Phone Number">Phone Number</span>
+        </label>
+      </fieldset>
+
+      <fieldset class="form-fieldset ui-input __fourth">
+        <input type="text" id="college" tabindex="0" name="college" />
+        <label for="college">
+          <span data-text="College">College</span>
+        </label>
+      </fieldset>
+
+      <fieldset class="form-fieldset ui-input __fifth">
+        <input type="text" id="branch" tabindex="0" name="branch" />
+        <label for="branch">
+          <span data-text="Branch (Full Form)">Branch (Full Form)</span>
+        </label>
+      </fieldset>
+
+      <fieldset class="form-fieldset ui-input __sixth">
+        <br><label for="branch">
+          <p>Are you an IEEE member?</p>
+          <input type="checkbox" id="yes" value="Yes" name="ieee_member_true" style="margin-left:-95%;" />
+          <p style="margin-left:15%; margin-top:-9.5%;">Yes</p>
+
+          <input type="checkbox" id="no" value="No" name="ieee_member_false" style="margin-left:-95%;" />
+          <p style="margin-left:15%; margin-top:-9.5%;">No</p>
+      </fieldset>
+
+      <fieldset class="form-fieldset ui-input __seventh">
+        <br><label for="branch">
+          <p>Select your interests</p>
+          <input type="checkbox" id="ieee" value="IEEE" name="IEEE" style="margin-left:-95%;" />
+          <p style="margin-left:15%; margin-top:-9.5%;">IEEE</p>
+
+          <input type="checkbox" id="mba" value="MBA" name="MBA" style="margin-left:-95%;" />
+          <p style="margin-left:15%; margin-top:-9.5%;">MBA</p>
+
+          <input type="checkbox" id="startUps" value="Start-Ups" name="Start-Ups" style="margin-left:-95%;" />
+          <p style="margin-left:15%; margin-top:-9.5%;">Start-Ups</p>
+
+          <input type="checkbox" id="utilities" value="Utilities" name="Utilities" style="margin-left:-95%;" />
+          <p style="margin-left:15%; margin-top:-9.5%;">Utilities</p>
+
+          <input type="checkbox" id="isro" value="ISRO" name="ISRO" style="margin-left:-95%;" />
+          <p style="margin-left:15%; margin-top:-9.5%;">ISRO</p>
+
+          <input type="checkbox" id="disasterManagement" name="disasterManagement" value="Disaster Management"
+            style="margin-left:-95%;" />
+          <p style="margin-left:15%; margin-top:-9.5%;">disaster management</p>
+      </fieldset>
+
+
+      <div class="form-footer">
+        <button class="btn" name="submit" type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>

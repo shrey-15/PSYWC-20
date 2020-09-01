@@ -23,45 +23,46 @@
                 <div class="container">
                     <h1>IEEE PSYWC 2020</h1>
                     <h2>Registration</h2>
-                    <form class="form" action="#">
+                    <form class="form" action="form-handling.php" method="post">
 
                         <fieldset class="form-fieldset ui-input __first">
-                            <input type="text" id="firstName" tabindex="0" />
+                            <input type="text" id="firstName" name="firstName" tabindex="0" required />
                             <label for="firstName">
                                 <span data-text="First Name">First Name</span>
                             </label>
                         </fieldset>
 
                         <fieldset class="form-fieldset ui-input __second">
-                            <input type="text" id="lastName" tabindex="0" />
+                            <input type="text" id="lastName" name="lastName" tabindex="0" required />
                             <label for="lastName">
                                 <span data-text="Last Name">Last Name</span>
                             </label>
                         </fieldset>
 
                         <fieldset class="form-fieldset ui-input __second">
-                            <input type="email" id="email" tabindex="0" />
+                            <input type="email" id="email" name="email" tabindex="0" required />
                             <label for="email">
                                 <span data-text="E-mail Address">E-mail Address</span>
                             </label>
                         </fieldset>
 
                         <fieldset class="form-fieldset ui-input __third">
-                            <input type="tel" id="phoneNumber" tabindex="0" maxlength="10" minlength="10" />
+                            <input type="tel" id="phoneNumber" tabindex="0" name="phoneNumber" maxlength="10"
+                                minlength="10" required />
                             <label for="phoneNumber">
                                 <span data-text="Phone Number">Phone Number</span>
                             </label>
                         </fieldset>
 
                         <fieldset class="form-fieldset ui-input __fourth">
-                            <input type="text" id="college" tabindex="0" />
+                            <input type="text" id="college" name="college" tabindex="0" required />
                             <label for="college">
                                 <span data-text="College">College</span>
                             </label>
                         </fieldset>
 
                         <fieldset class="form-fieldset ui-input __fifth">
-                            <input type="text" id="branch" tabindex="0" />
+                            <input type="text" id="branch" tabindex="0" name="branch" required />
                             <label for="branch">
                                 <span data-text="Branch (Full Form)">Branch (Full Form)</span>
                             </label>
@@ -70,40 +71,45 @@
                         <fieldset class="form-fieldset ui-input __sixth">
                             <br><label for="branch">
                                 <p>Are you an IEEE member?</p>
-                                <input type="checkbox" id="yes" value="Yes" style="margin-left:-46%;" />
-                                <p style="margin-left:15%; margin-top:-14.5%;">Yes</p>
+                                <input type="checkbox" id="yes" value="Yes" name="ieee_member_true"
+                                    style="margin-left:-46%;" />
+                                <p style="margin-left:15%; margin-top:-15%;">Yes</p>
 
-                                <input type="checkbox" id="no" value="No" style="margin-left:-46%;" />
-                                <p style="margin-left:15%; margin-top:-14.5%;">No</p>
+                                <input type="checkbox" id="no" value="No" name="ieee_member_false"
+                                    style="margin-left:-46%;" />
+                                <p style="margin-left:15%; margin-top:-15%;">No</p>
                         </fieldset>
 
                         <fieldset class="form-fieldset ui-input __seventh">
                             <br><label for="branch">
                                 <p>Select your interests</p>
-                                <input type="checkbox" id="ieee" value="IEEE" style="margin-left:-46%;" />
+                                <input type="checkbox" id="ieee" value="IEEE" name="IEEE" style="margin-left:-46%;" />
                                 <p style="margin-left:15%; margin-top:-15%;">IEEE</p>
 
-                                <input type="checkbox" id="mba" value="MBA" style="margin-left:-46%;" />
+                                <input type="checkbox" id="mba" value="MBA" name="MBA" style="margin-left:-46%;" />
                                 <p style="margin-left:15%; margin-top:-15%;">MBA</p>
 
-                                <input type="checkbox" id="startUps" value="Start-Ups" style="margin-left:-46%;" />
+                                <input type="checkbox" id="startUps" value="Start-Ups" name="Start-Ups"
+                                    style="margin-left:-46%;" />
                                 <p style="margin-left:15%; margin-top:-15%;">Start-Ups</p>
 
-                                <input type="checkbox" id="utilities" value="Utilities" style="margin-left:-46%;" />
+                                <input type="checkbox" id="utilities" value="Utilities" name="Utilities"
+                                    style="margin-left:-46%;" />
                                 <p style="margin-left:15%; margin-top:-15%;">Utilities</p>
 
-                                <input type="checkbox" id="isro" value="ISRO" style="margin-left:-46%;" />
+                                <input type="checkbox" id="isro" value="ISRO" name="ISRO" style="margin-left:-46%;" />
                                 <p style="margin-left:15%; margin-top:-15%;">ISRO</p>
 
-                                <input type="checkbox" id="disasterManagement" value="Disaster Management"
-                                    style="margin-left:-46%;" />
+                                <input type="checkbox" id="disasterManagement" name="disasterManagement"
+                                    value="Disaster Management" style="margin-left:-46%;" />
                                 <p style="margin-left:15%; margin-top:-15%;">disaster management</p>
                         </fieldset>
 
-                        <h6>*Note : Please check your email (Spam/All mail) after submitting this form for the link to
-                            our PSYWC groups and join them for further updates.</h6>
+                        <h6>*Note : Please check your email (Spam/All mail) after submitting this form for the link
+                            to our PSYWC groups and join them for further updates.</h6>
                         <div class="form-footer d-flex justify-content-center">
-                            <button class="btn">Submit</button>
+
+                            <button class="btn" name="submit" type="submit">Submit</button>
                         </div>
                     </form>
                 </div>

@@ -101,7 +101,7 @@ IEEE Pune Section.";
             mail($emailto,$subject,$message, $headers);
          ?>
          <script>
-             if(confirm("Registered Successfully")){
+             if(confirm("Registered Successfully\nPlease Check your email.");){
                  window.location.href="index.html"
              }
          </script>
