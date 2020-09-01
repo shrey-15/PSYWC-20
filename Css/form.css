@@ -38,7 +38,6 @@ h6{
 }
 .container {
   background-color: #213455;
-  max-width: 420px;
   margin: 0 auto;
   padding: 20px 16px 40px 16px;
   transform: translateZ(0);
