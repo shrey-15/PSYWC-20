@@ -986,6 +986,7 @@ body{
 }
 section{
   background-color:#8e8cd544;
+
 }
 .anc{
   text-decoration: none;
@@ -1028,10 +1029,10 @@ section{
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
-.card:hover{
+@media screen and (min-width:700px){.card:hover{
   text-decoration: none;
   transform: scale(1.1);
-}
+}}
 
 .card .card-top{
   border-top-left-radius: 15px;
@@ -1377,7 +1378,7 @@ letter-spacing: 3px;
   .neone1 span{
     position: absolute;
     display: block;
-  
+
   }
   .neone1 span:nth-child(1)
   {
@@ -1386,7 +1387,7 @@ letter-spacing: 3px;
     width: 100%;
     height: 2px;
     background: linear-gradient(90deg, transparent,#3859ab);
-  
+
   }
   .neone1:hover span:nth-child(1)
   {
@@ -1400,7 +1401,7 @@ letter-spacing: 3px;
     width: 100%;
     height: 2px;
     background: linear-gradient(270deg, transparent,#3859ab);
-  
+
   }
   .neone1:hover span:nth-child(3)
   {
@@ -1415,7 +1416,7 @@ letter-spacing: 3px;
     width: 2px;
     height: 100%;
     background: linear-gradient(180deg, transparent,#3859ab);
-  
+
   }
   .neone1:hover span:nth-child(2)
   {
@@ -1430,7 +1431,7 @@ letter-spacing: 3px;
     width: 2px;
     height: 100%;
     background: linear-gradient(360deg, transparent,#3859ab);
-  
+
   }
   .neone1:hover span:nth-child(4)
   {
